@@ -1,1 +1,12 @@
 /* GO WILD AND BE CREATIVE! */
+:root {
+     --yellow: #fa991c;
+     --white: #fbf3f2;
+     --lblue: #1c768f;
+     --dblue: #032539;
+}
+
+body {
+     font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+     background: var(--white);
+}
