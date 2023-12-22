@@ -3,9 +3,6 @@
 // 1. Create a variable named `temperature` and assign it a value.
 // 2. Use an `if` statement to check if the `temperature` is greater than 30. Print a message to the console accordingly.
 // 3. Extend the previous example with an `else` statement to print a different message if the temperature is not greater than 30.
-// 4. Create a variable named `time` and assign it a value representing the current hour (in 24-hour format).
-// 5. Use `else if` statements to greet the user based on the time of day (morning, afternoon, evening).
-// 6. Create a switch statement for the variable `day`. Print a message based on the day of the week.
 
 let temperature = 36.9;
 
@@ -15,6 +12,9 @@ if (temperature > 30){
 else {
      console.log("Temperature is equal or less than 30");
 }
+
+// 4. Create a variable named `time` and assign it a value representing the current hour (in 24-hour format).
+// 5. Use `else if` statements to greet the user based on the time of day (morning, afternoon, evening).
 
 let time = 1345;
 
@@ -54,6 +54,8 @@ else if ((time >= 1800 && time <= 1859) ||
 else {
      console.log("Not a Valid Time");
 }
+
+// 6. Create a switch statement for the variable `day`. Print a message based on the day of the week.
 
 let day = 'Saturday';
 
