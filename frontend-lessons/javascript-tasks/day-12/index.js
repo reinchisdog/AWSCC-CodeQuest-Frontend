@@ -16,3 +16,5 @@
 // 1. Create a JavaScript file (e.g., "helloworld.js") with a log statement.
 // 2. Link the external scripts to an HTML file.
 // 3. Open the browser console and observe the combined output.
+
+console.log("Hello World!");
