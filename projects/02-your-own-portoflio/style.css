@@ -8,18 +8,20 @@
 
 *,
 *::after,
-*::before { 
+*::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    font-family: Segoe UI, Frutiger, Frutiger Linotype, Dejavu Sans, Helvetica Neue, Arial, sans-serif;
 }
 
 body {
     background: var(--white);
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
     list-style: none;
 }
 
@@ -46,106 +48,110 @@ nav {
     align-items: center;
 }
 
-nav div p{
+nav div p {
     color: var(--white);
     font-weight: 800;
     font-size: 1.3rem;
     letter-spacing: 2px;
 }
 
-nav ul{
+nav ul {
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     padding: 18px 20px;
     cursor: pointer;
     transition: 200ms ease-in;
 }
 
-nav ul li:hover{
+nav ul li:hover {
     background: #021825;
     transition: 200ms ease-out;
 }
 
-nav ul li a{
+nav ul li a {
     color: var(--white);
     font-weight: bolder;
 }
 
- /*HEADER SECTION*/
-.top-part{
+/*HEADER SECTION*/
+.top-part {
     display: flex;
     margin-bottom: 30px;
     padding: 0 4rem;
     justify-content: center;
-    gap: 40px;
+    gap: 200px;
     align-items: center;
     background-color: white;
     box-shadow: gray 0px 1px 3px;
 }
 
- .top-part h1{
+.top-part h1 {
     font-size: 2.7rem;
 }
 
-.top-part h1 span{
+.top-part h1 span {
     color: var(--yellow);
 }
 
- .contact-info{
+.contact-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5rem 2rem 3rem 0rem;
 }
 
- .contact-info a img{
-    width: 50px;
-    border-radius:100%;
+.contact-info a img {
+    width: 70px;
+    border-radius: 100%;
     cursor: pointer;
     transition: 100ms ease-in-out;
 }
 
- .contact-info a img:hover{
-    border-radius:5px;
+.contact-info a img:hover {
+    border-radius: 5px;
     transform: scale(130%);
     margin: 0 10px;
 }
 
- /*MAIN SECTION*/
-.about-me, .educational-info, .skills-info, .sample-works{
+/*MAIN SECTION*/
+.about-me,
+.educational-info,
+.skills-info,
+.sample-works {
     width: 70%;
     margin: auto;
 }
 
-.subheading{
+.subheading {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     padding: 60px 0px 0px 0px;
 }
 
-.subheading h2{
+.subheading h2 {
+    white-space: nowrap;
     text-align: center;
-    margin: 0 20px;
+    padding: 0 30px;
     width: 100%;
 }
 
-.subheading .line{
+.subheading .line {
     background: var(--lblue);
     width: 100%;
     height: 2px;
 }
 
-.about-me p{
+.about-me p {
     margin: 30px 100px;
     font-size: 1.1rem;
     line-height: 30px;
     text-align: justify;
 }
 
-.educ-boxes{
+.educ-boxes {
     justify-content: center;
     align-items: flex-start;
     display: flex;
@@ -155,29 +161,29 @@ nav ul li a{
     margin: 30px;
 }
 
- .educ-box{
+.educ-box {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 250px;
 }
 
- .educ-box img{
+.educ-box img {
     margin: 30px;
     position: relative;
     z-index: -1;
 }
 
- .educ-box div p {
+.educ-box div p {
     text-align: center;
 }
 
- .educ-box div p span{
+.educ-box div p span {
     font-weight: bold;
     font-size: 1.1rem;
 }
 
- .skills-info .skill-list{
+.skills-info .skill-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -186,23 +192,23 @@ nav ul li a{
     gap: 8rem;
 }
 
- .skills-info .skill-list ul{
+.skills-info .skill-list ul {
     text-align: left;
 }
 
- .skills-info .skill-list ul li{
+.skills-info .skill-list ul li {
     font-size: 1.1rem;
     max-width: 250px;
     margin: 30px;
 }
 
- .sample-works .sample-works-boxes{
+.sample-works-boxes {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
- .sample-works .sample-works-boxes img{
+.sample-works-boxes img {
     width: 300px;
     height: 400px;
     object-fit: cover;
@@ -212,4 +218,237 @@ nav ul li a{
     border: white solid 10px;
     border-radius: 15px;
     box-shadow: gray 0px 2px 3px;
+}
+
+/*RESPONSIVE ADJUSTMENTS*/
+@media only screen and (max-width: 1440px) {
+    .top-part h1 {
+        font-size: 2.5rem;
+    }
+
+    .educ-box{
+        width: 200px;
+    }
+
+    .sample-works-boxes img{
+        margin: 20px 10px;
+    }
+
+    .contact-info a img {
+        width: 60px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .top-part {
+        padding: 0 4rem;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .top-part h1 {
+        font-size: 2.3rem;
+    }
+
+    .educ-box{
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-info {
+        margin: 2rem 2rem 3rem 0rem;
+    }
+
+    .contact-info a img {
+        width: 45px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .top-part {
+        padding: 0 1rem;
+        gap: 0px;
+    }
+    
+    .top-part h1 {
+        font-size: 2.3rem;
+    }
+
+    .top-img{
+        width: 400px;
+    }
+
+    .about-me,
+    .educational-info,
+    .skills-info,
+    .sample-works {
+        width: 80%;
+        margin: auto;
+    }
+
+    .about-me p {
+        margin: 30px 50px;
+    }
+
+    .educ-boxes {
+        gap: 0;
+        margin: 10px;
+    }
+    
+    .educ-box {
+        width: 200px;
+    }
+    
+    .educ-box img {
+        margin: 10px;
+        width: 150px; 
+    }
+
+    .skills-info .skill-list {
+        gap: 1rem;
+    }
+
+    .sample-works-boxes img {
+        width: 310px;
+        height: 410px;
+    }
+}
+
+@media only screen and (max-width: 768px) {   
+    nav{
+        justify-content: center;
+        padding: 15px 0;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    .top-part {
+        flex-direction: column;
+        padding: 3rem 0 0 0;
+    }
+    
+    .top-part h1 {
+        font-size: 2rem;
+    }
+
+    .top-img{
+        width: 300px;
+    }
+
+    .about-me,
+    .educational-info,
+    .skills-info,
+    .sample-works {
+        width: 90%;
+    }
+
+    .about-me p {
+        margin: 30px 30px;
+    }
+
+    .educ-boxes {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        margin: 0 10px;
+    }
+    
+    .educ-box {
+        width: 250px;
+        margin-bottom: 20px;
+    }
+    
+    .educ-box img {
+        margin: 10px;
+        width: 250px; 
+    }
+
+    .skills-info .skill-list {
+        gap: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skills-info .skill-list ul {
+        text-align: center;
+    }
+
+    .sample-works-boxes img {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 568px) {   
+    .top-part h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-info {
+        margin: 2rem 1rem 3rem 1rem;
+    }
+
+    .about-me,
+    .educational-info,
+    .skills-info,
+    .sample-works {
+        width: 90%;
+    }
+
+    .subheading {
+        font-size: 0.8rem;
+    }
+
+    .about-me p {
+        font-size: 1rem;
+        line-height: 25px;
+        margin: 30px 15px;
+    }
+    
+    .educ-box {
+        width: 200px;
+    }
+
+    .skills-info .skill-list ul li{
+        font-size: 1rem;
+    }
+
+    .sample-works-boxes img {
+        width: 350px;
+        height: 450px;
+    }
+}
+
+@media only screen and (max-width: 320px) {   
+    .about-me,
+    .educational-info,
+    .skills-info,
+    .sample-works {
+        width: 90%;
+    }
+
+    .subheading {
+        font-size: 0.8rem;
+    }
+
+    .subheading .line {
+        display: none;
+    }
+    
+    .educ-box {
+        width: 150px;
+    }
+
+    .sample-works-boxes img {
+        width: 300px;
+        height: 350px;
+    }
+
+    .skills-info .skill-list ul li{
+        margin: 10px;
+    }
 }
