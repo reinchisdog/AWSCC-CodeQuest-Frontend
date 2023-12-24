@@ -1,0 +1,34 @@
+<!--TASK 2: REMOVING DOM ELEMENTS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Removing DOM Elements</title>
+</head>
+<body>
+     <ul id="myList">
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+     </ul>
+</body>
+
+<script>
+     //Gets all elements with ID #myList and tag <li>
+     const myList = document.getElementById('myList')
+     const itemList = document.getElementsByTagName('li');
+
+     //Removes a Specific child element of ID #myList
+     myList.removeChild (itemList[1]);
+
+     //Gets the Last child element of ID #myList and remove it
+     const lastItem = myList.lastElementChild;
+     lastItem.remove();
+
+     //Removes All elements inside ID #myList
+     myList.innerHTML = '';
+     console.log(myList);
+</script>
+</html>

@@ -1,0 +1,27 @@
+<!--TASK 1: CREATING DOM ELEMENTS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Creating an Element with JavaScript</title>
+</head>
+<body>
+     <div id="dynamicContainer">
+          <!--Inserted Elements using Javascript-->
+     </div>
+</body>
+<script>
+     //Gets all element with ID #dynamicContainer
+     const dynamicContainer = document.getElementById('dynamicContainer');
+
+     //Creates a new <img> element
+     const newImage = document.createElement('img');
+
+     //Sets <img> element's src attribute
+     newImage.setAttribute('src', 'https://rb.gy/e04li3');
+
+     //Append img element inside ID #dynamicContainer
+     dynamicContainer.appendChild(newImage);
+</script>
+</html>
