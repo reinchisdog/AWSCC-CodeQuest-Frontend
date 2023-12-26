@@ -13,6 +13,7 @@ body {
 }
 
 .choice-btn {
+    display: none;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1rem;
     color: white;
@@ -42,6 +43,8 @@ body {
 #bottom-container{
     display: flex;
     flex-direction: column;
+    position: fixed;
+    top: 86%;
 }
 
 .option-buttons {
@@ -71,6 +74,16 @@ body {
     transform: translateY(2px);
 }
 
+#next-round-btn, #reset-game-btn {
+    display: none;
+}
+
+#gamemode-option {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
 #game-container {
     display: flex;
     flex-direction: column;
@@ -84,6 +97,7 @@ h1 {
 }
 
 #game-status {
+    position: absolute;
     display: flex;
     text-align: center;
     align-items: center;
