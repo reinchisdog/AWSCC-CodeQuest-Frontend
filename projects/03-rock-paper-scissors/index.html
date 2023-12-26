@@ -13,7 +13,9 @@
 <body>
     <div class="player-container" id="player1-container">
         <h2>Player 1</h2>
-        <div class="score" id="player1-score"></div>
+        <div class="score" id="player1-score">
+            0
+        </div>
         <div class="choice-display" id="player1-choice-display"></div>
         <div class="choices" id="player1-choices">
             <button class="choice-btn" id="rock-btn">ROCK</button>
@@ -24,15 +26,25 @@
 
     <div class="player-container" id="player2-container">
         <h2>Player 2</h2>
-        <div class="score" id="player2-score"></div>
+        <div class="score" id="player2-score">
+            0
+        </div>
         <div class="choice-display" id="player2-choice-display"></div>
+        <div class="choices" id="player2-choices">
+
+        </div>
     </div>
 
     <div id="game-container">
         <h1>ROCK-PAPER-SCISSORS</h1>
         <div id="game-status">SHOW YOUR HAND TO START THE GAME!</div>
         <div id="bottom-container">
-            <button id="reset-game-btn">RESET GAME</button>
+            <button class="option-buttons" id="next-round-btn">NEXT ROUND</button>
+            <button class="option-buttons" id="reset-game-btn">RESET GAME</button>
+            <div id="gamemode-option">
+                <button class="option-buttons" id="v-CPU">vs CPU</button>
+                <button class="option-buttons" id="v-PLY">vs Player</button>
+            </div>
         </div>
     </div>
 

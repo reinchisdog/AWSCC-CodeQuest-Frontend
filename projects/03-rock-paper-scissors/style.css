@@ -39,7 +39,12 @@ body {
     transform: translateY(2px);
 }
 
-#reset-game-btn {
+#bottom-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.option-buttons {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
     color: white;
@@ -54,7 +59,7 @@ body {
     transition-timing-function: ease-out;
 }
 
-#reset-game-btn:hover {
+.option-buttons:hover {
     color: black;
     background-color: white;
     box-shadow: 2px 2px 5px 0px black;
@@ -62,7 +67,7 @@ body {
     transform: translateY(-5px);
 }
 
-#reset-game-btn:active {
+.option-buttons:active {
     transform: translateY(2px);
 }
 
@@ -120,7 +125,7 @@ h2 {
     left: 10%;
 }
 
-#player1-choices {
+#player1-choices, #player2-choices {
     position: relative;
     display: flex;
     align-items: center;
