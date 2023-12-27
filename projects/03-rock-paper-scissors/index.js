@@ -72,7 +72,6 @@ nextRoundButton.addEventListener("click", function (){
      }
 
      nextRoundButton.style.display = 'none';
-     bottomContainer.style.top = '86%';
      player1ChoiceDisplay.innerHTML = '';
      player2ChoiceDisplay.innerHTML = '';
 
@@ -89,7 +88,6 @@ resetGameButton.addEventListener("click", function () {
      player1ChoiceDisplay.innerHTML = '';
      player2ChoiceDisplay.innerHTML = '';
      nextRoundButton.style.display = 'none';
-     bottomContainer.style.top = '86%';
      resetGameButton.style.display = 'none';
      gameModeButton.style.display = 'block';
 
@@ -165,7 +163,6 @@ function p2Turn(){
      }
 
      nextRoundButton.style.display = 'block';
-     bottomContainer.style.top = '78.4%';
 }
 
 //Function: for setting the process of Player 2 (CPU)
@@ -177,7 +174,6 @@ function CPUTurn(){
      }
 
      nextRoundButton.style.display = 'block';
-     bottomContainer.style.top = '78.4%';
 }
 
 //Function: that sets the Process of the game

@@ -6,47 +6,50 @@
 }
 
 body {
-    position: relative;
-    height: 97vh;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px 1px gray;
+    height: 100vh;
+    width: 100%;
 }
 
-.choice-btn {
-    display: none;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1rem;
-    color: white;
-    background-color: black;
-    height: auto;
-    padding: 15px 25px;
-    margin: 0 5px;
-    border: 2px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px 0 black;
-    transition: 350ms;
-    transition-timing-function: ease-out;
+h1 {
+    font-size: 50px;
 }
 
-.choice-btn:hover {
-    color: black;
-    background-color: white;
-    box-shadow: 5px 5px 8px 0px black;
-    cursor: pointer;
-    transform: translateY(-5px);
+h2 {
+    font-size: 30px;
 }
 
-.choice-btn:active {
-    transform: translateY(2px);
-}
-
-#bottom-container{
+/*GAME CONTAINER (MIDDLE SECTION)*/
+#game-container {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    top: 86%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
 }
 
+/*-- Game Status Display*/
+#game-status {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    font-size: 60px;
+    font-weight: 700;
+}
+
+/*-- Game Options Buttons Container*/
+#bottom-container{
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-- Game Options Buttons*/
 .option-buttons {
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     font-size: 1.25rem;
@@ -74,78 +77,86 @@ body {
     transform: translateY(2px);
 }
 
+/*-- Game Options Buttons (Next-Round, Reset-Game)*/
 #next-round-btn, #reset-game-btn {
     display: none;
 }
 
+/*-- Game Options Buttons (CPU, PVP)*/
 #gamemode-option {
     display: flex;
     flex-direction: row;
     gap: 10px;
 }
 
-#game-container {
+
+
+/*PLAYER CONTAINER (SIDE SECTIONS)*/
+.player-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    height: 800px;
-    margin-top: 20px;
-}
-
-h1 {
-    font-size: 50px;
-}
-
-#game-status {
     position: absolute;
-    display: flex;
-    text-align: center;
-    align-items: center;
     justify-content: center;
-    height: 80vh;
-    width: 700px;
-    font-size: 60px;
-    font-weight: 700;
-}
-
-.player-container {
     text-align: center;
-    position: absolute;
-    height: 800px;
-    width: 200px;
+    width: 25%;
 }
 
+#player1-container{
+    left: 5%;
+}
+
+#player2-container{
+    right: 5%;
+}
+
+/*-- Player Score Display*/
 .score {
     height: 30px;
     padding-top: 10px;
     font-size: 30px;
 }
 
+/*-- Player Button Choices Display*/
 .choice-display {
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: center;
-    height: 680px;
-    font-size: 80px;
-}
-
-h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 30px;
-}
-
-#player1-container {
-    left: 10%;
+    height: 70vh;
+    font-size: 60px;
+    font-weight: 700;
 }
 
 #player1-choices, #player2-choices {
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    bottom: 20px;
 }
 
-#player2-container {
-    right: 10%;
+/*-- Player Button Choices*/
+.choice-btn {
+    display: none;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    padding: 15px 25px;
+    margin: 0 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px 0 black;
+    transition: 350ms;
+    transition-timing-function: ease-out;
+}
+
+.choice-btn:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px 8px 0px black;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.choice-btn:active {
+    transform: translateY(2px);
 }
