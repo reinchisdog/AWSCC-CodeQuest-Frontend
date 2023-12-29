@@ -29,7 +29,7 @@ body {
 #title-heading {
      color: var(--white);
      font-family: 'Bebas Neue', sans-serif;
-     font-size: 10vw;
+     font-size: 8vw;
      text-align: center;
      margin: 18px;
      transition: 200ms ease-in-out;
@@ -46,6 +46,30 @@ span {
 }
 
 /*Display Section*/
+#display-container {
+     text-align: center;
+     height: 47vh;
+     width: 70%;
+     margin: 0 auto 35px;
+     color: var(--white);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+#display-container h2 {
+     font-family: 'Bebas Neue', sans-serif;
+     font-size: 4rem;
+     letter-spacing: 0.4rem;
+     line-height: 3.6rem;
+}
+
+#display-container h3 {
+     font-family: 'Montserrat', sans-serif;
+     margin-top: 20px;
+     letter-spacing: 0.4rem;
+}
 
 /*Input Section*/
 #bottom-container {
@@ -79,6 +103,7 @@ span {
      background-color: var(--prim-color);
      width: 100%;
      height: 1px;
+     overflow: hidden;
 }
 
 #bottom-inputs {
@@ -86,7 +111,7 @@ span {
      display: flex;
      flex-direction: row;
      margin: 10px 0 10px 0;
-     justify-content: space-between;
+     justify-content: space-evenly;
      align-items: center;
 }
 
@@ -126,13 +151,13 @@ input[type="range"]::-webkit-slider-thumb {
      transition: 100ms ease-in-out;
   }
 
-  input[type="range"]::-webkit-slider-thumb:hover {
+input[type="range"]::-webkit-slider-thumb:hover {
      height: 24px;
      margin-top: -11px; 
      transition: 100ms ease-in-out;
   }
 
-  input[type="range"]::-moz-range-thumb {
+input[type="range"]::-moz-range-thumb {
      -webkit-appearance: none; 
      appearance: none;
      margin-top: -12px; 
@@ -142,7 +167,7 @@ input[type="range"]::-webkit-slider-thumb {
      box-shadow: var(--black) 0 1px 1px;
      height: 30px;
      width: 0.5rem;    
-  }
+}
 
 #input-num {
      width: 10%;
@@ -172,6 +197,31 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 #submit-btn:hover{
+     background-color: var(--prim-color);
+     color: var(--black);
+     transition: 300ms ease-in-out;
+     translate: 0 -2px;
+}
+
+#restart-btn {
+     display: none;
+     width: 100%;
+     padding: 10px 0;
+     box-shadow: none;
+     border: none;
+     border-radius: 5px;
+     background-color: var(--black);
+     box-shadow: var(--black) 0 1px 1px;
+     color: var(--white);
+     font-weight: 600;
+     font-size: 16px;
+     letter-spacing: 2px;
+     cursor: pointer;
+     transition: 300ms ease-in-out;
+     box-shadow: var(--black) 0 1px 1px;
+}
+
+#restart-btn:hover{
      background-color: var(--prim-color);
      color: var(--black);
      transition: 300ms ease-in-out;

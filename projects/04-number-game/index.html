@@ -11,8 +11,8 @@
           <span>Number</span> Guessing Game
      </div>
      <div id="display-container">
-          <h2>ENTER A NUMBER TO START A GAME</h2>
-          <h3>(between 0-1000)</h3>
+          <h2 id="display-main">ENTER A <span>NUMBER</span> TO START A GAME...</h2>
+          <h3 id="display-subh">(between 0-1000)</h3>
      </div>
      <div id="bottom-container">
           <div id="bottom-heading">
@@ -24,6 +24,7 @@
                <input type="range" name="input-range" id="input-range" min="0" max="1000">
                <input type="number" name="input-num" id="input-num" placeholder="Guess" min="0" max="1000">
                <input type="submit" name="submit-btn" id="submit-btn">
+               <button id="restart-btn">Click me to Restart!</button>
           </div>   
      </div>
 
